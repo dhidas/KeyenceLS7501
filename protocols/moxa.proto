@@ -1,9 +1,4 @@
-# Streams protocol file for the pmacStreams protocol
-# Initial version NPR 04/2006
-# two versions for function getPlcsDisabled and getMotionProgramActive
-# 0 suffix for VME, 1 suffix for GeoBrick - the only difference is an additional CR in "out"
-
-# use "streamReload" to reload this file without restarting the IOC
+# For getting the US and DS measurements fro theKeyenceLS7501 throug a Moxa unit
 
 ExtraInput = Ignore;
 ReadTimeout = 500;
