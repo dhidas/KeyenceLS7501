@@ -6,7 +6,6 @@ cd ${TOP}
 
 # Set epics env variables
 epicsEnvSet("ENGINEER", "Dean Andrew Hidas is not an engineer. <dhidas@bnl.gov>")
-epicsEnvSet("PMACUTIL", "/usr/share/epics-pmacutil-dev")
 epicsEnvSet("MOXA_IP", "192.168.127.254:4001")
 epicsEnvSet("sys", "SR:C99-ID:G1")
 epicsEnvSet("dev", "NYX:1")
