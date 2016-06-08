@@ -1,0 +1,27 @@
+# Streams protocol file for the pmacStreams protocol
+# Initial version NPR 04/2006
+# two versions for function getPlcsDisabled and getMotionProgramActive
+# 0 suffix for VME, 1 suffix for GeoBrick - the only difference is an additional CR in "out"
+
+# use "streamReload" to reload this file without restarting the IOC
+
+ExtraInput = Ignore;
+ReadTimeout = 500;
+OutTerminator = "";
+InTerminator = "";
+Separator = "";
+
+
+
+getUS
+{
+  out "M1,0" CR;
+  in  "M1,%f" CR;
+}
+
+getDS
+{
+  out "M2,0" CR;
+  in  "M2,%f" CR;
+}
+

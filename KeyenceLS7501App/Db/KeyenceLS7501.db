@@ -1,0 +1,19 @@
+
+record(ai, "$(SYS){$(DEV)}KeyenceUS") {
+  field(DTYP, "stream")
+  field(PREC, 5)
+  field(EGU, "mm")
+  field(SCAN, "1 second")
+  field(INP, "@moxa.proto getUS() $(PORT)")
+}
+
+
+record(ai, "$(SYS){$(DEV)}KeyenceDS") {
+  field(DTYP, "stream")
+  field(PREC, 5)
+  field(EGU, "mm")
+  field(SCAN, "1 second")
+  field(INP, "@moxa.proto getDS() $(PORT)")
+}
+
+
